@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "r3": {
+      "type": "http",
+      "url": "https://mcp.r3js.org/mcp"
+    }
+  }
+}
