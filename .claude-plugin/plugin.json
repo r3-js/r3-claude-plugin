@@ -16,5 +16,9 @@
     "audio"
   ],
   "homepage": "https://r3js.org",
-  "privacyPolicyUrl": "https://r3js.org/privacy-policy"
+  "privacyPolicyUrl": "https://r3js.org/privacy-policy",
+  "repository": "https://github.com/r3-js/r3-claude-plugin",
+  "documentationUrl": "https://r3js.org/documentation/mcp",
+  "supportUrl": "https://r3js.org/support",
+  "termsOfServiceUrl": "https://r3js.org/terms-of-service"
 }
