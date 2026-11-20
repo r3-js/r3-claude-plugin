@@ -1,7 +1,7 @@
 {
-  "name": "r3",
-  "displayName": "R3",
-  "version": "3.218.3",
+  "name": "r3js",
+  "displayName": "R3 (r3js.org)",
+  "version": "3.218.4",
   "description": "Build and change R3 projects (3D scenes, physics, audio, music) with Claude (chat, Cowork and Claude Code), through R3's MCP server with Sign in with R3.",
   "author": {
     "name": "R3",
