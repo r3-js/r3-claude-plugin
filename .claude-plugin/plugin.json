@@ -1,7 +1,7 @@
 {
   "name": "r3",
   "displayName": "R3",
-  "version": "3.218.1",
+  "version": "3.218.2",
   "description": "Build and change R3 projects (3D scenes, physics, audio, music) with Claude (chat, Cowork and Claude Code), through R3's MCP server with Sign in with R3.",
   "author": {
     "name": "R3",
@@ -17,7 +17,7 @@
     "audio"
   ],
   "homepage": "https://r3js.org",
-  "icon": "./.claude-plugin/icon.png",
+  "icon": "https://r3js.org/android-chrome-512x512.png",
   "privacyPolicyUrl": "https://r3js.org/privacy-policy",
   "repository": "https://github.com/r3-js/r3-claude-plugin",
   "documentationUrl": "https://r3js.org/documentation/mcp",
