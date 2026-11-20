@@ -1,10 +1,11 @@
 {
   "name": "r3",
   "displayName": "R3",
-  "version": "3.183.1",
-  "description": "Build and change R3 projects (3D scenes, physics, audio, music) from Claude Code, through R3's MCP server.",
+  "version": "3.218.1",
+  "description": "Build and change R3 projects (3D scenes, physics, audio, music) with Claude (chat, Cowork and Claude Code), through R3's MCP server with Sign in with R3.",
   "author": {
-    "name": "R3"
+    "name": "R3",
+    "url": "https://r3js.org"
   },
   "license": "MIT",
   "keywords": [

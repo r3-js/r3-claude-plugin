@@ -20,7 +20,8 @@ passive, and the component's methods.
 
 ## The order of work
 
-1. **`r3_whoami`.** Confirm which R3 account the key acts for and which capabilities it has.
+1. **`r3_whoami`.** Confirm which R3 account you act for (through an app connection or an agent
+   key) and which capabilities it has.
    Never attempt a tool the capabilities do not cover.
 2. **Find or make the project.** `r3_project_list` lists the account's own and its teams'
    projects with their ids, last updated first. When the user names a project, search for it by name; if several
@@ -220,13 +221,19 @@ A refusal is R3 telling you no. It is not a crash, and the same input will be re
   or tell the user what R3 said.
 - **No active login on this environment**: R3 acts through the user's own session. Ask the user
   to sign in to R3 in a browser on this environment, then retry. Do not loop on it.
-- **Missing capability**: the key does not allow it. The user can add the right to this key
-  with Edit rights in R3, under Settings → AI & apps → Agent keys (the same key keeps working;
-  a key from before 2026-10-09 carrying the retired `project:delete` gets the new delete rights
-  there too). Do not look for a way around it.
-- **401 / invalid key**: the key is wrong or revoked. The user creates a new one under
-  Settings → AI & apps → Agent keys, then sets it on this plugin (`/plugin configure` in Claude Code, or
-  the configure command that page shows) and restarts Claude Code or runs `/mcp`.
+- **Missing capability**: the connection or key does not allow it. Do not look for a way around it.
+  - Connected with Sign in with R3: the user disconnects this app under Settings → AI & apps →
+    Connected apps, connects again and ticks the right on the Allow page.
+  - With an agent key: the user can add the right to this key with Edit rights in R3, under
+    Settings → AI & apps → Agent keys (the same key keeps working; a key from before 2026-10-09
+    carrying the retired `project:delete` gets the new delete rights there too).
+- **401 / not signed in**:
+  - Connected with Sign in with R3: the connection was revoked or expired. In Claude Code the user
+    runs `/mcp`, picks the R3 server and authenticates again; on claude.ai or in Cowork they
+    reconnect R3 on the plugin's Connectors tab.
+  - With an agent key: the key is wrong or revoked. The user creates a new one under
+    Settings → AI & apps → Agent keys, then sets it on this plugin (`/plugin configure` in Claude
+    Code, or the configure command that page shows) and restarts Claude Code or runs `/mcp`.
 
 ## Never delete
 
