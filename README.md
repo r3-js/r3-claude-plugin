@@ -17,7 +17,7 @@ Privacy policy: https://r3js.org/privacy-policy. Terms of service: https://r3js.
 
 ## Set up
 
-1. Add the R3 plugin. Once it is listed in the Claude directory, add it there: it is listed as `r3js` (shown as "R3 (r3js.org)"), and its skill is `r3js:r3`. In Claude Code you can also add it from R3's own marketplace, where the plugin is named `r3`:
+1. Add the R3 plugin. Once it is listed in the Claude directory, add it there. In Claude Code you can also add it from R3's own marketplace:
 
    ```
    claude plugin marketplace add https://mcp.r3js.org/claude/marketplace.json
