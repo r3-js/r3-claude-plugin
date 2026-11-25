@@ -1,11 +1,10 @@
 {
   "name": "r3",
   "displayName": "R3",
-  "version": "3.218.5",
-  "description": "Build and change R3 projects (3D scenes, physics, audio, music) with Claude (chat, Cowork and Claude Code), through R3's MCP server with Sign in with R3.",
+  "version": "3.245.0",
+  "description": "Build and change R3 projects (3D scenes, physics, audio, music) from Claude Code, through R3's MCP server.",
   "author": {
-    "name": "R3",
-    "url": "https://r3js.org"
+    "name": "R3"
   },
   "license": "MIT",
   "keywords": [
@@ -16,11 +15,5 @@
     "physics",
     "audio"
   ],
-  "homepage": "https://r3js.org",
-  "icon": "https://r3js.org/android-chrome-512x512.png",
-  "privacyPolicyUrl": "https://r3js.org/privacy-policy",
-  "repository": "https://github.com/r3-js/r3-claude-plugin",
-  "documentationUrl": "https://r3js.org/documentation/mcp",
-  "supportUrl": "https://r3js.org/support",
-  "termsOfServiceUrl": "https://r3js.org/terms-of-service"
+  "icon": "./.claude-plugin/icon.png"
 }

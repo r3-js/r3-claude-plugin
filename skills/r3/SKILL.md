@@ -96,11 +96,11 @@ change.
   live) and says whether there are changes that are not live yet.
 - **`r3_release_rollback`** makes an earlier release live again, only when the user asks. Nothing
   is deleted.
-- Each live project uses one slot of the project owner's plan (a publish update or a rollback
-  uses none). If the plan is full, or there is
-  no plan, nothing is published: the answer says how many live projects the plan allows, how
-  many are live, and gives the page where the user picks a plan. Pass that on, and let the user
-  decide (another project offline, or a bigger plan).
+- Each live project uses one slot of the project owner's account (a publish update or a rollback
+  uses none): a free account has 3 (its live pages show a small "Made with R3" badge), plans more.
+  If there is no room, nothing is published: the answer says how many live projects the account
+  allows, how many are live, and gives the page where the user picks a plan. Pass that on, and let
+  the user decide (another project offline, or a bigger plan).
 - **Never ask for or accept card details.** A plan is bought by the user on R3's own page.
 - **`r3_unpublish_live`** takes a live project offline again, only when the user asks. Nothing is
   deleted and any preview link keeps working.
@@ -148,6 +148,9 @@ You can test and **see** what you build in the open editor:
   (running systems included), at most 1280 px. **Capture after every visual
   change** to check it landed as you meant — before telling the user it is done — and after
   `r3_editor_run` to see it move. A blank picture means nothing is in the camera's view.
+- **Stop before visual edits (lights, materials …), then capture / run again:
+  a tab running physics applies edits only after Stop.** While physics runs, your changes are kept
+  but wait; a capture then shows the state before them, and its answer says how many are waiting.
 
 ### Every change is kept
 
