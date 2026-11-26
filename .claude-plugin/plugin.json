@@ -1,7 +1,7 @@
 {
   "name": "r3",
   "displayName": "R3",
-  "version": "3.251.0",
+  "version": "3.252.0",
   "description": "Build and change R3 projects (3D scenes, physics, audio, music) from Claude Code, through R3's MCP server.",
   "author": {
     "name": "R3"
